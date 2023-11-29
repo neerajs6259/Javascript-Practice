@@ -1,0 +1,1 @@
+let a = document.getElementById("demo").innerHTML = "DATE :"+ Date()
