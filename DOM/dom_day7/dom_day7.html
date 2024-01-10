@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print 1-10</title>
+</head>
+<body>
+    <div id="numberList"></div>
+    <p id="ab">12</p>
+
+    <script>
+        // Get a reference to the div where you want to display the numbers
+        var numberList = document.getElementById("numberList");
+        var givennumber=document.getElementById("ab").innerHTML
+
+        // Loop to print numbers 1 to 10
+        for (var i = 1; i <= 10; i++) {
+            // Create a new <p> element to display each number
+            var numberElement = document.createElement("p");
+          
+            
+            // Set the text content of the <p> element to the current number
+            numberElement.textContent = i*givennumber;
+            
+            // Append the <p> element to the div
+            numberList.appendChild(numberElement);
+        }
+    </script>
+</body>
+</html>
